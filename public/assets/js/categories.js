@@ -41,7 +41,7 @@ $('#categoryBox').on('click', '.edit', function() {
             // location.reload();
             var html = template('modifycategoryTpl', res)
             $('#modifyBox').html(html);
-            console.log(html);
+            // console.log(html);
 
         }
     })
@@ -53,6 +53,10 @@ $('#categoryBox').on('click', '.edit', function() {
 $('#modifyBox').on('submit', '#modifyCategory', function() {
     var id = $(this).attr('data-id');
     $.ajax({
+        //put修改
+        //post上传
+        //get获取
+        //delete删除
         type: 'put',
         url: '/categories/' + id,
         data: $(this).serialize(),
