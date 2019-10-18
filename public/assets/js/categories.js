@@ -49,7 +49,7 @@ $('#categoryBox').on('click', '.edit', function() {
 })
 
 
-
+//提交功能
 $('#modifyBox').on('submit', '#modifyCategory', function() {
     var id = $(this).attr('data-id');
     $.ajax({
